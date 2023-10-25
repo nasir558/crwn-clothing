@@ -6,7 +6,7 @@ import {
 
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
-import './sign-up-form.styles.scss';
+import "./sign-up-form.styles.scss";
 
 const defaultFormFields = {
   displayName: "",
@@ -36,7 +36,6 @@ const SignUpForm = () => {
         email,
         password
       );
-
       await createUserDocumentFromAuth(user, { displayName });
 
       resetFormFields();
@@ -93,7 +92,9 @@ const SignUpForm = () => {
           value={confirmPassword}
           onChange={handleChange}
         />
-        <Button buttonType='' type="submit">Sign Up</Button>
+        <Button buttonType="" type="submit">
+          Sign Up
+        </Button>
       </form>
     </div>
   );
